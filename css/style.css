@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns:100px 50px 50px auto auto auto auto 50px 150px 150px 200px 8.33% ;
+    grid-template-rows: 50% 50%;
+    width: 100%;
+    background-color: #88AB8E;
+    height: 100px;
+}
+
+header .logotyp {
+    grid-column: 2/4;
+    grid-row: 1/3;
+}
+
+header .menu-btn, #nav-menu {
+    display: none;
+}
+
+header #icon-minasidor {
+    grid-column: 8/9;
+    grid-row: 1/2;
+    justify-self: end;
+    align-self: end;
+}
+
+header #link-minasidor {
+    grid-column: 9/10;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: end;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;  
+    font-size: 24px; 
+}
+
+header input {
+    grid-column: 10/12;
+    grid-row: 1/2;
+    align-self: end;
+    height: 30px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px grey;
+}
+
+header #icon_speaker {
+    grid-column: 10/11;
+    grid-row: 2/3;
+    align-self: center;
+    width: 30px;
+    
+}
+
+header #link_lyssna {
+    grid-column: 10/11;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 24px;  
+}
+
+header #icon_language {
+    grid-column: 11/12;
+    grid-row: 2/3;
+    align-self: center;
+}
+
+header #link_language {
+    grid-column: 11/12;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 24px;  
+}
+
+nav {
+    display: flex;
+    background-color: #AFC8AD;
+    height: 55px;
+    justify-content: center;
+    box-shadow: 0 0 10px;
+    
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 24px;  
+    padding: 15px 2%;
+   
+}
+
+main {
+   
+    background-color: #F2F1EB;
+    height: 70vh;
+    box-shadow: 0 0 10px;
+   
+}
+
+footer {
+    background-color: #88AB8E;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 66px 66px 66px;
+    box-shadow: 0 0 10px;
+}
+
+footer #contact {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px; 
+    line-height: 2em;
+    align-self: center;
+    justify-self: center;
+}
+
+footer  #link_avboka {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    align-self: center;
+    justify-self: center;
+}
+
+footer #link_ansok {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    align-self: center;
+    justify-self: center;
+}
+
+footer #icons_download {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    align-self: center;
+    justify-self: center;
+}
+
+
+footer #link_omfard {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    align-self: center;
+    justify-self: center;
+}
+
+footer #link_omwebb {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    align-self: center;
+    justify-self: center;
+}
+
+footer #link_tillgang {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    align-self: center;
+    justify-self: center;
+}
+
+/* Media querys för skärmar mindre än 1150 pixlar */
+@media (max-width: 1150px) {
+
+    header {
+        display: block;
+    }
+    
+
+    header #icon-minasidor, #link-minasidor, input, #icon_speaker, #link_lyssna, #icon_language, #link_language {
+        display: none;
+    }
+
+    .nav-bigscreen{
+        display: none;
+    }
+
+    
+
+
+
+/* Hamburgemeny eller dropdown meny  */
+    #nav-menu {
+        background-color: #88AB8E;
+        box-shadow: 0 0 10px;
+        width: 300px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+        /* denna togglas mellan block och none för att visa och gömma menyn*/
+    }
+
+    #nav-menu ul {
+        position: relative;
+        top: 60px;
+        width: 90%;
+        text-align: center;
+        list-style-type: none;
+    }
+    
+    #nav-menu ul li {
+        padding: 8%;
+        width: 90%;
+        cursor: pointer;
+    }
+
+    #nav-menu ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+    }
+
+    #nav-menu ul li a:hover {
+        background-color: #6a856e;
+    }
+
+    /*Meny-knappen för att öppna dropdown menyn*/
+    #open-menu {
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+        background-color: #88AB8E;
+        border: white solid 2px;
+        cursor: pointer;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        box-shadow: 0 0 5px;
+        /*flexibel display för att öppna och stänga meny*/
+    }
+
+    #open-menu:hover {
+        background-color: #6a856e;
+    }
+
+    #menu-icon-bars {
+        margin-right: 10px;
+    }
+
+    /*hamburgemenyn*/
+    .bars {
+        width: 30px;
+        height: 3px;
+        border-radius: 10px;
+        display: block;
+        background-color: white;
+        margin: 5px 0;
+    }
+
+    .menu-text {
+        color: white;
+        font-size:2em;
+        padding: 0 10px;
+    }
+
+    /*stänga meny-knappen*/
+    header #close-menu {
+        display: flex;
+        margin: 2% 2%;
+        padding: 10px 15px;
+        position: relative;
+        top: 20px;
+        right: -120px;
+        cursor: pointer;
+        background-color: #88AB8E;
+        border: white solid 2px;
+        box-shadow:  0 0 5px;
+    }
+
+    header #close-menu:hover {
+        background-color: #6a856e;
+    }
+
+    .cross1 {
+        transform: rotate(45deg);
+        position: relative;
+        top: 5px;
+        width: 25px;
+        background-color: white;
+        padding: 2%;
+    }
+
+    .cross2 {
+        transform: rotate(135deg);
+        position: relative;
+        top: -3px;
+        width: 25px;
+        background-color: white;
+        padding: 2%;
+    }
+
+
+
+
+
+
+
+/*footer*/
+    
+    footer {
+        display: grid;
+        background-color: #88AB8E;
+        height: auto;
+        grid-template-columns: 100%;
+        grid-template-rows:auto;
+        box-shadow: 0 0 10px;
+    }
+    
+    footer  #link_avboka {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 30px 0 10px 0;
+    }
+    
+    footer #link_ansok {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+    footer #link_omfard {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+    footer #link_omwebb {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+    footer #link_tillgang {
+        grid-column: 1/2;
+        grid-row: 5/6;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 10px 0 50px 0;
+    }
+
+    footer #contact {
+        grid-column: 1/2;
+        grid-row: 6/7;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+    }
+      
+    footer #icons_download {
+        grid-column: 1/2;
+        grid-row: 7/8;
+        padding: 30px;
+    }
+}

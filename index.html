@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <title>Färdtjänst</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a class="logotyp" href="index.html"><img src="bilder/logo.png" alt="logotyp"></a>
+           
+           <img id="icon-minasidor" src="bilder/minasidor.png" alt="ikon mina sidor">
+           <a id="link-minasidor" href="inloggning.html">Logga in</a>
+            <input type="text">
+            <img id="icon_speaker" src="bilder/icon_speaker.png" alt="ikon speaker">
+            <a id="link_lyssna" href="">Lyssna</a>
+            <img id="icon_language" src="bilder/icon_language.png" alt="ikon välj språk">
+            <a id="link_language" href="">Välj Språk</a>
+
+
+                <!--Meny-knapp för att öppna dropdown meny-->
+           
+                <button class="menu-btn open" id="open-menu">
+                    <span class="menu-icon" id="menu-icon-bars">
+                        <span class="bars"></span>
+                        <span class="bars"></span>
+                        <span class="bars"></span>
+                    </span>
+                    <span class="menu-text">Meny</span>
+                </button>
+                <!--dropdown meny och stäng-knappen -->
+                <nav id="nav-menu">
+                    <!--Stängaknappen som visas när mdropmenyn är -->
+                    <button id="close-menu">
+                        <span class="menu-icon" id="menu-icon-cross">
+                            <span class="bars cross1"></span>
+                            <span class="bars cross2"></span>
+                        </span>
+                        <span class="menu-text">Stäng</span>
+                    </button>
+                    <ul>
+                        <li><a href="inloggning.html">Logga in</a></li>
+                        <li><a href="index.html">Startsidan</a></li>
+                        <li><a href="bokaresa.html">Boka resa</a></li>
+                        <li><a href="mina_sidor.html">Mina sidor</a></li>
+                        <li><a href="ansok.html">Ansök om färdtjänst</a></li>
+                    </ul>
+                </nav>
+
+        </header>
+        <nav class="nav-bigscreen">
+            <a href="index.html">STARTSIDA</a>
+            <a href="ansok.html">ANSÖK OM FÄRDTJÄNST</a>
+            <a href="inloggning.html">BOKA RESA</a>
+        </nav>
+        <main>
+            Startsidan
+        </main>
+        <footer>
+            <section id="contact" >
+                <h3>Kontakta oss:</h3>
+                <img id="icon_telephone" src="bilder/icon_telephone.png" alt="ikon telefon">
+                Telefon: 08-555 555<br>
+                <img id="icon_mail" src="bilder/icon_mail.png" alt="ikon mail">
+                E-post: kundservice@fardtjanst.se<br>
+            </section>
+
+            <a id="link_avboka" href="inloggning.html">Avboka / Ändra</a>
+            <a id="link_ansok" href="ansok.html">Ansök om färdtjänst</a>
+            <a id="icons_download" href="https://play.google.com/store/games?hl=sv&gl=US"><img src="bilder/icons_download.png" alt="Ladda ner till google Play och app store"></a>
+            
+            
+
+            <a id="link_omfard" href="about_fardtjanst.html">Om färdtjänst</a>
+            <a id="link_omwebb" href="about_thewebpage.html">Om webbplatsen</a>
+            <a id="link_tillgang" href="tillganglighetsredogorelse.html">Tillgänglighetsredogörelse</a>
+        </footer>
+
+    </div>   
+    
+</body>
+</html>
