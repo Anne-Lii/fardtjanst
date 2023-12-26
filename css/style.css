@@ -213,7 +213,9 @@ footer #link_tillgang {
         display: none;
     }
 
-    
+    header img {
+        max-width: 70%;
+    }
 
 
 
@@ -221,7 +223,7 @@ footer #link_tillgang {
     #nav-menu {
         background-color: #88AB8E;
         box-shadow: 0 0 10px;
-        width: 300px;
+        width: 330px;
         height: 100vh;
         position: absolute;
         top: 0;
@@ -233,14 +235,14 @@ footer #link_tillgang {
     #nav-menu ul {
         position: relative;
         top: 60px;
-        width: 90%;
+        width: 100%;
         text-align: center;
         list-style-type: none;
     }
     
     #nav-menu ul li {
-        padding: 8%;
-        width: 90%;
+        padding: 8% 2%;
+        width: 100%;
         cursor: pointer;
     }
 
@@ -258,12 +260,12 @@ footer #link_tillgang {
     #open-menu {
         display: flex;
         align-items: center;
-        padding: 10px 15px;
+        padding: 5px 3px;
         background-color: #88AB8E;
         border: white solid 2px;
         cursor: pointer;
         position: absolute;
-        top: 25px;
+        top: 30px;
         right: 20px;
         box-shadow: 0 0 5px;
         /*flexibel display för att öppna och stänga meny*/
@@ -273,13 +275,9 @@ footer #link_tillgang {
         background-color: #6a856e;
     }
 
-    #menu-icon-bars {
-        margin-right: 10px;
-    }
-
     /*hamburgemenyn*/
     .bars {
-        width: 30px;
+        width: 25px;
         height: 3px;
         border-radius: 10px;
         display: block;
@@ -289,8 +287,8 @@ footer #link_tillgang {
 
     .menu-text {
         color: white;
-        font-size:2em;
-        padding: 0 10px;
+        font-size:1.4em;
+        padding: 0 3px;
     }
 
     /*stänga meny-knappen*/
@@ -300,7 +298,7 @@ footer #link_tillgang {
         padding: 10px 15px;
         position: relative;
         top: 20px;
-        right: -120px;
+        right: -100px;
         cursor: pointer;
         background-color: #88AB8E;
         border: white solid 2px;
