@@ -197,12 +197,12 @@ main {
     left: 60px;
 }
 
-/*Main-inloggningssdian*/
+/*Main-inloggningssidan*/
 
 #main_inloggning {
     display: grid;
     grid-template-columns:1fr 2fr 1fr;
-    grid-template-rows: 10% 10% 30% 30% 10%;
+    grid-template-rows:50px 150px 150px 150px;
 }
 
 #main_inloggning h1 {
@@ -210,31 +210,43 @@ main {
     grid-row: 2/3;
     justify-self: center;
     align-self: center;
+    
+    
 }
 
 #bankid_loggain {
     grid-column: 2/3;
     grid-row: 3/4;
     justify-self: center;
-    align-self: center;
+    height: 100px;
+    width: 250px;
     background-color: #88AB8E;
-    padding: 40px 80px;
     border-radius: 10px;
     border: 1px solid black;
-    
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 0 0 10px black; 
+    cursor: pointer;  
 }
+
 
 #fardtjanstid_loggain {
     grid-column: 2/3;
     grid-row: 4/5;
     justify-self: center;
-    align-self: center;
+    height: 100px;
+    width: 250px;
     background-color: #88AB8E;
-    padding: 40px 60px;
     border-radius: 10px;
     border: 1px solid black;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 0 0 10px black; 
+    cursor: pointer;    
 }
- 
+
 
 #main_inloggning a {
     color: white;
