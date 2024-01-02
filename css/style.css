@@ -398,6 +398,15 @@ main {
     width: 300px;
     height: 30px;
     border-radius: 3px;
+    border: 2px solid black;
+}
+
+#section_resatill label {
+    font-size: 20px;
+}
+
+#section_resatill ::placeholder {
+    font-size: 16px;
 }
 
 #section_resatill a {
@@ -410,12 +419,48 @@ main {
     padding: 100px 0 0 0 ;
 }
 
+#section_resafrån input, select {
+    width: 300px;
+    height: 30px;
+    border-radius: 3px;
+    border: 2px solid black;
+}  
+
+#section_resafrån label {
+    font-size: 20px;
+}
+
+#section_resafrån ::placeholder {
+    font-size: 16px;
+}
+
 #section_närresa {
     grid-column: 5/9;
     grid-row: 6/7;
     padding: 100px 0 0 0 ;
 }
 
+#section_närresa #datum, #tidpunkt, #ankomst {
+    width: 300px;
+    height: 30px;
+    border-radius: 3px; 
+    border: 2px solid black;
+}
+
+#section_närresa label, p {
+    font-size: 20px;
+}
+
+#section_närresa #from, #to {
+    width: 300px;
+    height: 30px;
+    border-radius: 3px;
+    border: 2px solid black;
+}
+
+#återkommande_dropmeny {
+    display: none;
+}
 
 #section_hurmånga {
     grid-column: 5/9;
@@ -423,18 +468,158 @@ main {
     padding: 100px 0 0 0 ;
 }
 
+#section_hurmånga #quantity { 
+    width: 60px;
+    height: 30px;
+    border-radius: 3px;
+    border: 2px solid black;
+}
+
+#section_hurmånga label {
+    font-size: 20px;
+}
+
+#section_hurmånga .btn {
+    padding: 10px 30px;
+    margin-top: 50px;
+    margin-bottom: 300px;
+    background-color: #88AB8E;
+    border-radius: 3px; 
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#section_hurmånga .btn:hover{
+    background-color: #576d5b;
+}
 
 
 
 
+/*Main kontrollera och betala*/
+
+#main_kontroll {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+}
+
+#breadcrums_kontroll {
+    grid-column: 1/13;
+    grid-row: 1/2
+}
+
+#main_kontroll h1 {
+    grid-column: 5/9;
+    grid-row: 2/3;
+    justify-self: center;
+    padding: 20px 0 50px 0;
+}
+#main_kontroll h2 {
+    grid-column: 5/9;
+    grid-row: 3/4;
+    justify-self: center;
+    padding: 20px 0 0 0;
+}
+
+#section_persinfo_kontroll {
+    grid-column: 5/9;
+    grid-row: 4/5;
+    padding: 50px 0 50px 0;
+}
+
+#section_persinfo_kontroll a {
+    background-color: #88AB8E;
+    padding: 5px 30px 5px 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#reseinformation {
+    grid-column: 5/9;
+    grid-row: 5/6;
+    padding: 20px 0 50px 0;
+    background-color: #EEE7DA;
+    border-radius: 10px;
+}
+
+#reseinformation p {
+    padding: 10px 0 0 40px;
+}
+
+#reseinformation h2 {
+    padding: 10px 0 0 40px;
+}
+
+#check_bokningsbekräftelse {
+    grid-column: 5/9;
+    grid-row: 6/7;
+}
+
+#section_betalning {
+    grid-column: 5/9;
+    grid-row: 7/8;
+}
+
+#section_buttons {
+    grid-column: 5/9;
+    grid-row: 8/9;
+}
+
+.section_buttons_btn {
+    padding: 10px 30px;
+    margin-top: 50px;
+    margin-bottom: 300px;
+    background-color: #88AB8E;
+    border-radius: 3px; 
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
 
+/*Main bekräftelse*/
 
+#main_bekräftelse {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+}
 
+#breadcrums_bekräftelse {
+    grid-column: 1/13;
+    grid-row: 1/2;
+}
 
+#main_bekräftelse h1 {
+    grid-column: 5/9;
+    grid-row: 2/3;
+    justify-self: center;
+}
 
+#bokat_check {
+    grid-column: 5/9;
+    grid-row: 3/4;
+    justify-self: center;
+}
 
+#ditt_bokningsnummer{
+    grid-column: 5/9;
+    grid-row: 4/5;
+    justify-self: center;
+}
 
+#bekräftelse_via{
+    grid-column: 5/9;
+    grid-row: 5/6;
+    justify-self: center;
+}
 
 
 /*Footer*/

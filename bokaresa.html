@@ -55,7 +55,7 @@
 
         <nav class="nav-bigscreen">
             <a href="index.html">STARTSIDA</a>
-            <a href="inloggning.html">BOKA RESA</a>
+            <a href="bokaresa.html">BOKA RESA</a>
         </nav>
 
 
@@ -106,7 +106,7 @@
             <section id="section_resafrån">
                 <h2>Jag vill resa från: </h2>
                 <br><br>
-                <label>Välj favorit:</label><br>
+                <label>Välj favorit:</label>
                 <select name="Favorit">
                     <option value="Hem">Hem</option>
                     <option value="Skolan">Skolan</option>
@@ -116,44 +116,48 @@
                     <option value="Sjukgymnastiken">Sjukgymnastiken</option>
                     <option value="Viktors hus">Viktors hus</option>
                 </select>
-
                 <br><br>
                 <label>Adress:<br><input type="text" name="adresss" placeholder="Exempelvägenvägen 1"></label>
                 <br><br>
                 <label>Postnummer:<br><input type="number" name="postnummer" placeholder="123 45"></label><br><br>
                 <label>Postort:<br><input type="text" name="postort" placeholder="Postort"></label>
-
             </section>
             
+
+
             <section id="section_närresa">
                 <h2>När vill jag resa? </h2>
                 <br><br>
-                <label>Datum:<br><input type="date" name="date" ></label>
+                <label>Datum:<br><input type="date" name="date" id="datum" ></label>
                 <br><br>
-                <label>Tidpunkt:<br><input type="time" name="time"></label><br><br>
+                <label>Tidpunkt:<br><input type="time" name="time" id="tidpunkt"></label><br><br>
                 <label>Tid:<br></label>
-                <select name="tid">
+                <select name="tid" id="ankomst">
                     <option value="Ankomsttid">Ankomsttid</option>
                     <option value="Avgångstid">Avgångstid</option>
                     <option value="Snarast möjligt">Snarast möjligt</option>
                 </select>
-
                 <br><br>
+                <p><input type="checkbox" name="returresa" value="" id="returresa"> Jag vill boka returresa</p>
 
-                <p>Detta är en återkommande resa: <input type="checkbox" name="newsletter" value=""></p>
                 <br>
 
-                <p><input type="checkbox" name="newsletter" value="">Måndagar: </p>
-                <p><input type="checkbox" name="newsletter" value="">Tisdagar: </p>
-                <p><input type="checkbox" name="newsletter" value="">Onsdagar: </p>
-                <p><input type="checkbox" name="newsletter" value="">Torsdagar: </p>
-                <p><input type="checkbox" name="newsletter" value="">Fredagar: </p>
-                <p><input type="checkbox" name="newsletter" value="">Lördagar: </p>
-                <p><input type="checkbox" name="newsletter" value="">Söndagar: </p>
+                <p><input type="checkbox" name="återkommande" value="" id="check_återkommande"> Detta är en återkommande resa</p>
                 <br>
-                <label>Från och med:<br><input type="date" name="from_date"></label>
-                <br><br>
-                <label>Till och med:<br><input type="date" name="to_date"></label>
+
+                <section id="återkommande_dropmeny">
+                    <p><input type="checkbox" name="Måndagar" value="" id="check1"> Måndagar</p>
+                    <p><input type="checkbox" name="Tisdagar" value="" id="check2"> Tisdagar</p>
+                    <p><input type="checkbox" name="Onsdagar" value="" id="check3"> Onsdagar</p>
+                    <p><input type="checkbox" name="Torsdagar" value="" id="check4"> Torsdagar</p>
+                    <p><input type="checkbox" name="Fredagar" value="" id="check5"> Fredagar</p>
+                    <p><input type="checkbox" name="Lördagar" value="" id="check6"> Lördagar</p>
+                    <p><input type="checkbox" name="Söndagar" value="" id="check7"> Söndagar</p>
+                    <br>
+                    <label>Från och med:<br><input type="date" name="from_date" id="from"></label>
+                    <br><br>
+                    <label>Till och med:<br><input type="date" name="to_date" id="to"></label>
+                </section>
            
 
             </section>
@@ -161,22 +165,24 @@
             <section id="section_hurmånga">
                 <h2>Hur många resande?</h2>
                 <br><br>
-                <label>Antal:<input type="number" name="quantity" ></label>
+                <label>Antal: <input type="number" name="quantity" id="quantity"></label>
                 <br><br>
-                <p><input type="checkbox" name="newsletter" value="">Ledsagare följer med</p>
+                <p><input type="checkbox" name="newsletter" value=""> Ledsagare följer med</p>
                 <br><br>
-
-                <p><input type="checkbox" name="newsletter" value="">Rullstolsanpassad transport</p>
-                <p><input type="checkbox" name="newsletter" value="">Liggande transport</p>
-                <p><input type="checkbox" name="newsletter" value="">Medtag av husdjur</p>
+  
+                <p><input type="checkbox" name="newsletter" value=""> Rullstolsanpassad transport</p>
+                <p><input type="checkbox" name="newsletter" value=""> Liggande transport</p>
+                <p><input type="checkbox" name="newsletter" value=""> Djur följer med </p>
                 <br><br>
                 <p>Meddelande:</p>
                 <textarea name="message" cols="40" rows="8"></textarea>
                 <br><br>
 
-                <input type="reset">
+                
+                <button class="btn" onclick="location.href='bokaresa.html'" type="button"><img src="bilder/icon_arrow_back.png" alt="ikon pil tillbaka"> Tillbaka</button>
+                <button class="btn" onclick="location.href='kontroll_betalning.html'" type="button"> Nästa <img src="bilder/icon_arrow_forward.png" alt="ikon pil framåt"></button>
             </section>
-
+          
 
 
 
