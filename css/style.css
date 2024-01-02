@@ -345,6 +345,7 @@ main {
     max-width: 500px;
     border-radius: 10px;
     border: 1px solid black;
+    text-shadow: 0 0 5px black;
     color: white;
     font-size: 24px;
     font-weight: bold;
@@ -363,6 +364,7 @@ main {
     max-width: 500px;
     border-radius: 10px;
     border: 1px solid black;
+    text-shadow: 0 0 5px black;
     color: white;
     font-size: 24px;
     font-weight: bold;
@@ -381,6 +383,7 @@ main {
     max-width: 500px;
     border-radius: 10px;
     border: 1px solid black;
+    text-shadow: 0 0 5px black;
     color: white;
     font-size: 24px;
     font-weight: bold;
@@ -399,6 +402,7 @@ main {
     max-width: 500px;
     border-radius: 10px;
     border: 1px solid black;
+    text-shadow: 0 0 5px black;
     color: white;
     font-size: 24px;
     font-weight: bold;
@@ -406,6 +410,24 @@ main {
     text-align: center;
 }
 
+#link5 {
+    grid-column: 2/3;
+    grid-row: 7/8;
+    justify-self: center;
+    background-color: #88AB8E;
+    padding: 10px 0 10px 0;
+    max-height: 50px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-shadow: 0 0 5px black;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
 
 
 
@@ -469,6 +491,12 @@ main {
     padding: 10px 0 10px 0;
     width: 30%;
     font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#main_minaresor .btn:hover {
+    background-color: #88AB8E;
 }
 
 
@@ -485,7 +513,6 @@ main {
     grid-template-columns: auto;
     grid-template-rows: 50px 150px auto;
 }
-
 
 #breadcrums_bokaresa {
     grid-column: 1/13;
@@ -510,14 +537,18 @@ main {
     padding: 10px 0 20px 0;
 }
 
-#section_persinfo a {
+#section_persinfo .btn {
     background-color: #88AB8E;
-    padding: 5px 30px 5px 30px;
-    border-radius: 5px;
-    border: 1px solid black;
     color: white;
-    text-decoration: none;
-    font-size: 20px;
+    padding: 10px 0 10px 0;
+    width: 30%;
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#section_persinfo .btn:hover {
+    background-color: #576d5b;
 }
 
 #section_persinfo a img {
@@ -618,15 +649,13 @@ main {
 }
 
 #section_hurmånga .btn {
-    padding: 10px 0 10px 0;
-    width: 31%;
-    margin-top: 50px;
-    margin-bottom: 300px;
     background-color: #88AB8E;
-    border-radius: 3px; 
     color: white;
+    margin: 0 0 200px 0;
+    padding: 10px 0 10px 0;
+    width: 30%;
     font-size: 24px;
-    font-weight: bold;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -670,14 +699,19 @@ main {
     padding: 50px 0 50px 30px;
 }
 
-#section_persinfo_kontroll a {
+#section_persinfo_kontroll .btn {
     background-color: #88AB8E;
     padding: 5px 30px 5px 30px;
     border-radius: 5px;
     border: 1px solid black;
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#section_persinfo_kontroll .btn:hover {
+    background-color: #576d5b;
 }
 
 #reseinformation {
@@ -723,7 +757,6 @@ main {
     padding: 10px 0 10px 0;
     color: white;
     font-size: 24px;
-    font-weight: bold;
     cursor: pointer;
 }
 
@@ -764,6 +797,59 @@ main {
     grid-column: 5/9;
     grid-row: 5/6;
     justify-self: center;
+}
+
+
+
+
+
+/*mina personliga inställningar*/
+#main_personliga_inställningar {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px 150px auto;
+}
+
+#breadcrums_personligainställningar {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    align-self: center;
+}
+
+#main_personliga_inställningar h1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+}
+
+#section_inställningar {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    padding: 10px 0 10px 30px;
+}
+
+#section_inställningar #edit_name, #edit_phone, #edit_mail {
+    width: 300px;
+    height: 30px;
+    border-radius: 3px;
+    border: 2px solid black;
+}
+
+#section_inställningar input::placeholder {
+    font-size: 20px;
+}
+
+#section_inställningar .btn {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: #88AB8E;
+    border-radius: 5px; 
+    width: 31%;
+    padding: 10px 0 10px 0;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 
