@@ -151,6 +151,10 @@ main {
     opacity: 90%;
 }
 
+#breadcrums_index {
+    position: relative;
+    top: 10px;
+} 
 /*sectionen med informationstexten på förstasidan*/
 #text_index {
     margin: auto;
@@ -197,8 +201,13 @@ main {
     left: 60px;
 }
 
-/*Main-inloggningssidan*/
+/*Main-ansök om färdtjänst-sidan*/
+#main_ansök {
 
+}
+
+
+/*Main-inloggningssidan*/
 #main_inloggning {
     display: grid;
     grid-template-columns:1fr 2fr 1fr;
@@ -210,8 +219,6 @@ main {
     grid-row: 2/3;
     justify-self: center;
     align-self: center;
-    
-    
 }
 
 #bankid_loggain {
@@ -230,7 +237,6 @@ main {
     cursor: pointer;  
 }
 
-
 #fardtjanstid_loggain {
     grid-column: 2/3;
     grid-row: 4/5;
@@ -247,25 +253,13 @@ main {
     cursor: pointer;    
 }
 
-
-#main_inloggning a {
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    text-shadow: 2px 2px 10px rgb(71, 71, 71);
-    text-decoration: none;
-}
-
 #breadcrums_inlogg {
     grid-column: 1/4;
     grid-row: 1/2;
+    align-self: center;
+    color: black;
 }  
 
-#breadcrums_inlogg a {
-    color: black;
-    font-weight: 100;
-    font-size: 16px;
-}
 
 
 
@@ -274,12 +268,13 @@ main {
 #main_minasidor {
     display: grid;
     grid-template-columns: 1fr 2fr 1 fr;
-    grid-template-rows: repeat(8,1fr);
+    grid-template-rows: 50px 150px 120px 120px 120px 120px;
 }
 
 #breadcrums_minasidor {
     grid-column: 1/4;
     grid-row: 1/2;
+    align-self: center;
 }
 
 #main_minasidor h1 {
@@ -293,56 +288,72 @@ main {
     grid-column: 2/3;
     grid-row: 3/4;
     justify-self: center;
-    align-self: center;
     background-color: #88AB8E;
-    padding: 15px 110px;
+    padding: 10px 0 10px 0;
+    max-height: 50px;
+    width: 90%;
+    max-width: 500px;
     border-radius: 10px;
     border: 1px solid black;
     color: white;
     font-size: 24px;
+    font-weight: bold;
     text-decoration: none;
+    text-align: center;
 }
 
 #link2 {
     grid-column: 2/3;
     grid-row: 4/5;
     justify-self: center;
-    align-self: center;
     background-color: #88AB8E;
-    padding: 15px 125px;
+    padding: 10px 0 10px 0;
+    max-height: 50px;
+    width: 90%;
+    max-width: 500px;
     border-radius: 10px;
     border: 1px solid black;
     color: white;
     font-size: 24px;
+    font-weight: bold;
     text-decoration: none;
+    text-align: center;
 }
 
 #link3 {
     grid-column: 2/3;
     grid-row: 5/6;
     justify-self: center;
-    align-self: center;
     background-color: #88AB8E;
-    padding: 15px 112px;
+    padding: 10px 0 10px 0;
+    max-height: 50px;
+    width: 90%;
+    max-width: 500px;
     border-radius: 10px;
     border: 1px solid black;
     color: white;
     font-size: 24px;
+    font-weight: bold;
     text-decoration: none;
+    text-align: center;
 }
 
 #link4 {
     grid-column: 2/3;
     grid-row: 6/7;
     justify-self: center;
-    align-self: center;
     background-color: #88AB8E;
-    padding: 15px 30px;
+    padding: 10px 0 10px 0;
+    max-height: 50px;
+    width: 90%;
+    max-width: 500px;
     border-radius: 10px;
     border: 1px solid black;
     color: white;
     font-size: 24px;
+    font-weight: bold;
     text-decoration: none;
+    text-align: center;
 }
 
 
@@ -357,14 +368,15 @@ main {
 
 #main_bokaresa {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-rows: 50px 150px auto;
 }
 
 
 #breadcrums_bokaresa {
-    grid-column: 1/4;
+    grid-column: 1/13;
     grid-row: 1/2;
+    align-self: center;
 }
 
 #main_bokaresa h1 {
@@ -492,7 +504,8 @@ main {
 }
 
 #section_hurmånga .btn {
-    padding: 10px 30px;
+    padding: 10px 0 10px 0;
+    width: 31%;
     margin-top: 50px;
     margin-bottom: 300px;
     background-color: #88AB8E;
@@ -514,13 +527,14 @@ main {
 
 #main_kontroll {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-rows: 50px 150px auto;
 }
 
 #breadcrums_kontroll {
     grid-column: 1/13;
-    grid-row: 1/2
+    grid-row: 1/2;
+    align-self: center;
 }
 
 #main_kontroll h1 {
@@ -539,7 +553,7 @@ main {
 #section_persinfo_kontroll {
     grid-column: 5/9;
     grid-row: 4/5;
-    padding: 50px 0 50px 0;
+    padding: 50px 0 50px 30px;
 }
 
 #section_persinfo_kontroll a {
@@ -571,24 +585,28 @@ main {
 #check_bokningsbekräftelse {
     grid-column: 5/9;
     grid-row: 6/7;
+    padding: 0 0 0 30px;
 }
 
 #section_betalning {
     grid-column: 5/9;
     grid-row: 7/8;
+    padding: 0 0 0 30px;
 }
 
 #section_buttons {
     grid-column: 5/9;
     grid-row: 8/9;
+    padding: 0 0 0 30px;
 }
 
 .section_buttons_btn {
-    padding: 10px 30px;
     margin-top: 50px;
-    margin-bottom: 300px;
+    margin-bottom: 30px;
     background-color: #88AB8E;
-    border-radius: 3px; 
+    border-radius: 5px; 
+    width: 31%;
+    padding: 10px 0 10px 0;
     color: white;
     font-size: 24px;
     font-weight: bold;
@@ -600,13 +618,14 @@ main {
 
 #main_bekräftelse {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-rows: 50px 150px auto;
 }
 
 #breadcrums_bekräftelse {
     grid-column: 1/13;
     grid-row: 1/2;
+    align-self: center;
 }
 
 #main_bekräftelse h1 {
