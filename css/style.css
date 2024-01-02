@@ -803,6 +803,55 @@ main {
 
 
 
+/*Main-mina fakturor*/
+#main_minafakturor {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px 150px 120px 120px;
+}
+
+#breadcrums_minafakturor {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    align-self: center;
+}
+
+#main_minafakturor h1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+}
+
+#main_minafakturor #btn_obetalda {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: center;
+    height: 100px;
+    background-color: #88AB8E;
+    border-radius: 5px; 
+    width: 100%;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#main_minafakturor #btn_betalda {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-self: center;
+    height: 100px;
+    background-color: #88AB8E;
+    border-radius: 5px; 
+    width: 100%;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+
 /*mina personliga inställningar*/
 #main_personliga_inställningar {
     display: grid;
