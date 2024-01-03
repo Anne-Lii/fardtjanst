@@ -959,47 +959,72 @@ main {
     grid-column: 2/3;
     grid-row: 3/4;
     justify-self: center;
-    align-self: center;
+    max-height: 50px;
+    background-color: #718d76;
+    width: 80%;
+    padding: 10px 0 10px 10px;
+    border-radius: 5px;
+    color: white;
 }
 
 #färdtjänst2 {
     grid-column: 2/3;
     grid-row: 4/5;
     justify-self: center;
-    align-self: center;
+    max-height: 50px;
+    background-color: #718d76;
+    width: 80%;
+    padding: 10px 0 10px 10px;
+    border-radius: 5px;
+    color: white;
 }
 
 #färdtjänst3 {
     grid-column: 2/3;
     grid-row: 5/6;
     justify-self: center;
-    align-self: center;
+    max-height: 50px;
+    background-color: #718d76;
+    width: 80%;
+    padding: 10px 0 10px 10px;
+    border-radius: 5px;
+    color: white;
 }
 
 #färdtjänst4 {
     grid-column: 2/3;
     grid-row: 6/7;
     justify-self: center;
-    align-self: center;
+    max-height: 50px;
+    background-color: #718d76;
+    width: 80%;
+    padding: 10px 0 10px 10px;
+    border-radius: 5px;
+    color: white;
 }
 
 #färdtjänst5 {
     grid-column: 2/3;
     grid-row: 7/8;
     justify-self: center;
-    align-self: center;
-}
-
-#färdtjänst6 {
+    max-height: 50px;
     background-color: #718d76;
     width: 80%;
     padding: 10px 0 10px 10px;
     border-radius: 5px;
-    
+    color: white;
+}
+
+#färdtjänst6 {
     grid-column: 2/3;
     grid-row: 8/9;
     justify-self: center;
-    align-self: center;
+    max-height: 50px;
+    background-color: #718d76;
+    width: 80%;
+    padding: 10px 0 10px 10px;
+    border-radius: 5px;
+    color: white;
 }
 
 
