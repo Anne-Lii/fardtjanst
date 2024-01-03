@@ -30,7 +30,7 @@ header {
     grid-template-columns:100px 50px 50px auto auto auto auto 50px 150px 150px 200px 8.33% ;
     grid-template-rows: 50% 50%;
     width: 100%;
-    background-color: #88AB8E;
+    background-color: #718d76;
     height: 100px;
 }
 
@@ -122,7 +122,7 @@ header #link_language {
 
 nav {
     display: flex;
-    background-color: #AFC8AD;
+    background-color: #96ac94;
     height: 55px;
     justify-content: center;
     box-shadow:  0 0 10px;
@@ -277,7 +277,7 @@ main {
     justify-self: center;
     height: 100px;
     width: 250px;
-    background-color: #88AB8E;
+    background-color: #718d76;
     border-radius: 10px;
     border: 1px solid black;
     color: white;
@@ -293,7 +293,7 @@ main {
     justify-self: center;
     height: 100px;
     width: 250px;
-    background-color: #88AB8E;
+    background-color: #718d76;
     border-radius: 10px;
     border: 1px solid black;
     color: white;
@@ -338,7 +338,7 @@ main {
     grid-column: 2/3;
     grid-row: 3/4;
     justify-self: center;
-    background-color: #88AB8E;
+    background-color: #718d76;
     padding: 10px 0 10px 0;
     max-height: 50px;
     width: 90%;
@@ -357,7 +357,7 @@ main {
     grid-column: 2/3;
     grid-row: 4/5;
     justify-self: center;
-    background-color: #88AB8E;
+    background-color: #718d76;
     padding: 10px 0 10px 0;
     max-height: 50px;
     width: 90%;
@@ -376,7 +376,7 @@ main {
     grid-column: 2/3;
     grid-row: 5/6;
     justify-self: center;
-    background-color: #88AB8E;
+    background-color: #718d76;
     padding: 10px 0 10px 0;
     max-height: 50px;
     width: 90%;
@@ -395,7 +395,7 @@ main {
     grid-column: 2/3;
     grid-row: 6/7;
     justify-self: center;
-    background-color: #88AB8E;
+    background-color: #718d76;
     padding: 10px 0 10px 0;
     max-height: 50px;
     width: 90%;
@@ -414,7 +414,7 @@ main {
     grid-column: 2/3;
     grid-row: 7/8;
     justify-self: center;
-    background-color: #88AB8E;
+    background-color: #718d76;
     padding: 10px 0 10px 0;
     max-height: 50px;
     width: 90%;
@@ -496,7 +496,7 @@ main {
 }
 
 #main_minaresor .btn:hover {
-    background-color: #88AB8E;
+    background-color: #718d76;
 }
 
 
@@ -538,7 +538,7 @@ main {
 }
 
 #section_persinfo .btn {
-    background-color: #88AB8E;
+    background-color: #718d76;
     color: white;
     padding: 10px 0 10px 0;
     width: 30%;
@@ -649,7 +649,7 @@ main {
 }
 
 #section_hurmånga .btn {
-    background-color: #88AB8E;
+    background-color: #718d76;
     color: white;
     margin: 0 0 200px 0;
     padding: 10px 0 10px 0;
@@ -700,7 +700,7 @@ main {
 }
 
 #section_persinfo_kontroll .btn {
-    background-color: #88AB8E;
+    background-color: #718d76;
     padding: 5px 30px 5px 30px;
     border-radius: 5px;
     border: 1px solid black;
@@ -751,7 +751,7 @@ main {
 .section_buttons_btn {
     margin-top: 50px;
     margin-bottom: 30px;
-    background-color: #88AB8E;
+    background-color: #718d76;
     border-radius: 5px; 
     width: 31%;
     padding: 10px 0 10px 0;
@@ -828,7 +828,7 @@ main {
     grid-row: 3/4;
     justify-self: center;
     height: 100px;
-    background-color: #88AB8E;
+    background-color: #718d76;
     border-radius: 5px; 
     width: 100%;
     color: white;
@@ -841,7 +841,7 @@ main {
     grid-row: 4/5;
     justify-self: center;
     height: 100px;
-    background-color: #88AB8E;
+    background-color: #718d76;
     border-radius: 5px; 
     width: 100%;
     color: white;
@@ -892,7 +892,7 @@ main {
 #section_inställningar .btn {
     margin-top: 50px;
     margin-bottom: 30px;
-    background-color: #88AB8E;
+    background-color: #718d76;
     border-radius: 5px; 
     width: 31%;
     padding: 10px 0 10px 0;
@@ -935,9 +935,97 @@ main {
 
 
 
+/*Main - om färdtjänst*/
+#main_omfärdtjänst {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px 150px auto;
+}
+
+#breadcrums_omfärdtjänst {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    align-self: center;
+}
+
+#main_omfärdtjänst h1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+}
+
+#färdtjänst1 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: center;
+}
+
+#färdtjänst2 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-self: center;
+    align-self: center;
+}
+
+#färdtjänst3 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    justify-self: center;
+    align-self: center;
+}
+
+#färdtjänst4 {
+    grid-column: 2/3;
+    grid-row: 6/7;
+    justify-self: center;
+    align-self: center;
+}
+
+#färdtjänst5 {
+    grid-column: 2/3;
+    grid-row: 7/8;
+    justify-self: center;
+    align-self: center;
+}
+
+#färdtjänst6 {
+    background-color: #718d76;
+    width: 80%;
+    padding: 10px 0 10px 10px;
+    border-radius: 5px;
+    
+    grid-column: 2/3;
+    grid-row: 8/9;
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Footer*/
 footer {
-    background-color: #88AB8E;
+    background-color: #718d76;
     height: 200px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
