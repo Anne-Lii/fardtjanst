@@ -1117,10 +1117,41 @@ main {
 
 
 
+/*Main - om webbplatsen*/
+#main_omwebbplatsen {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px 150px 250px 250px;
+}
 
+#breadcrums_omwebbplatsen {
+    grid-column: 1/4;
+    grid-row: 1/2;
+   
+}
 
+#main_omwebbplatsen h1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+}
 
+#cookies {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: center;
+    width: 90%;
+    max-width: 800px;
+}
 
+#omwebbplatsen_tillgänglighetsredogörelse {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-self: center;
+    width: 90%;
+    max-width: 800px;
+}
 
 
 
