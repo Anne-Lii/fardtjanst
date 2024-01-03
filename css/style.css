@@ -833,7 +833,6 @@ main {
     width: 100%;
     color: white;
     font-size: 24px;
-    font-weight: ;
     cursor: pointer;
 }
 
@@ -901,6 +900,39 @@ main {
     font-size: 24px;
     cursor: pointer;
 }
+
+#section_inställningar .btn:hover {
+    background-color: #576d5b;
+}
+
+
+
+/*Main - tillgänglighetsredogörelse*/
+
+#breadcrums_tillgänglighetsredogörelse {
+    position: relative;
+    top: 10px;
+}
+
+#tillgänglighetsredogörelse {
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+    padding: 150px 0 200px 0;
+}
+
+#tillgänglighetsredogörelse h1 {
+    padding: 20px 0 40px 0;
+}
+
+#tillgänglighetsredogörelse h2 {
+    padding: 20px 0 10px 0;
+}
+
+
+
+
+
 
 
 /*Footer*/
