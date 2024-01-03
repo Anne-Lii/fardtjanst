@@ -83,6 +83,27 @@
                         src="bilder/icon_edit_white.png" alt=""></button>
             </section>
 
+              <!--Section med Jag vill resa från -->
+              <section id="section_resafrån">
+                <h2>Jag vill resa från: </h2>
+                <br><br>
+                <label for="favorit">Välj favorit:</label>
+                <select name="Favorit" id="favorit">
+                    <option value="Hem">Hem</option>
+                    <option value="Skolan">Skolan</option>
+                    <option value="Mormors hus">Mormors hus</option>
+                    <option value="Idrottsarenan Jönköping">Idrottsarenan Jönköping</option>
+                    <option value="Idrottsarenan Habo">Idrottsarenan Habo</option>
+                    <option value="Sjukgymnastiken">Sjukgymnastiken</option>
+                    <option value="Viktors hus">Viktors hus</option>
+                </select>
+                <br><br>
+                <label>Adress:<br><input type="text" name="adresss" placeholder="Exempelvägenvägen 1"></label>
+                <br><br>
+                <label>Postnummer:<br><input type="number" name="postnummer" placeholder="123 45"></label><br><br>
+                <label>Postort:<br><input type="text" name="postort" placeholder="Postort"></label>
+            </section>
+            
 
             <!--Section med Jag vill resa till -->
             <section id="section_resatill">
@@ -105,28 +126,6 @@
                 <label>Postort:<br><input type="text" name="postort" placeholder=" Postort"></label>
                 <br><br>
                 <a href="https://www.google.com/maps">Hitta adress (Google maps)</a>
-            </section>
-
-
-            <!--Section med Jag vill resa från -->
-            <section id="section_resafrån">
-                <h2>Jag vill resa från: </h2>
-                <br><br>
-                <label for="favorit">Välj favorit:</label>
-                <select name="Favorit" id="favorit">
-                    <option value="Hem">Hem</option>
-                    <option value="Skolan">Skolan</option>
-                    <option value="Mormors hus">Mormors hus</option>
-                    <option value="Idrottsarenan Jönköping">Idrottsarenan Jönköping</option>
-                    <option value="Idrottsarenan Habo">Idrottsarenan Habo</option>
-                    <option value="Sjukgymnastiken">Sjukgymnastiken</option>
-                    <option value="Viktors hus">Viktors hus</option>
-                </select>
-                <br><br>
-                <label>Adress:<br><input type="text" name="adresss" placeholder="Exempelvägenvägen 1"></label>
-                <br><br>
-                <label>Postnummer:<br><input type="number" name="postnummer" placeholder="123 45"></label><br><br>
-                <label>Postort:<br><input type="text" name="postort" placeholder="Postort"></label>
             </section>
 
 
@@ -154,23 +153,22 @@
                 <br>
 
                 <div id="återkommande_dropmeny">
-                    <p><input type="checkbox" name="Måndagar" value="måndagar" id="check1"></p>
-                    <label for="check1"> Måndagar</label>
-                    <p><input type="checkbox" name="Tisdagar" value="tisdagar" id="check2"></p>
-                    <label for="check2"> Tisdagar</label>
-                    <p><input type="checkbox" name="Onsdagar" value="onsdagar" id="check3"></p>
-                    <label for="check3"> Onsdagar</label>
-                    <p><input type="checkbox" name="Torsdagar" value="torsdagar" id="check4"></p>
-                    <label for="check4"> Torsdagar</label>
-                    <p><input type="checkbox" name="Fredagar" value="fredagar" id="check5"></p>
-                    <label for="check5"> Fredagar</label>
-                    <p><input type="checkbox" name="Lördagar" value="lördagar" id="check6"></p>
-                    <label for="check6"> Lördagar</label>
-                    <p><input type="checkbox" name="Söndagar" value="söndagar" id="check7"></p>
-                    <label for="check7"> Söndagar</label>
-                    <br>
-                    <label>Från och med:<br><input type="date" name="from_date" id="from"></label>
+                    <input type="checkbox" name="Måndagar" value="måndagar" id="check1">
+                    <label for="check1"> Måndagar</label><br>
+                    <input type="checkbox" name="Tisdagar" value="tisdagar" id="check2">
+                    <label for="check2"> Tisdagar</label><br>
+                    <input type="checkbox" name="Onsdagar" value="onsdagar" id="check3">
+                    <label for="check3"> Onsdagar</label><br>
+                    <input type="checkbox" name="Torsdagar" value="torsdagar" id="check4">
+                    <label for="check4"> Torsdagar</label><br>
+                    <input type="checkbox" name="Fredagar" value="fredagar" id="check5">
+                    <label for="check5"> Fredagar</label><br>
+                    <input type="checkbox" name="Lördagar" value="lördagar" id="check6">
+                    <label for="check6"> Lördagar</label><br>
+                    <input type="checkbox" name="Söndagar" value="söndagar" id="check7">
+                    <label for="check7"> Söndagar</label><br>
                     <br><br>
+                    
                     <label>Till och med:<br><input type="date" name="to_date" id="to"></label>
                 </div>
 
@@ -178,33 +176,34 @@
             </section>
 
             <!--Section med hur många resande -->
-            <section id="section_hurmånga">
-                <h2>Hur många resande?</h2>
+            <form id="section_hurmånga">
+                
+                <h2>Hur många resande</h2>
+                <br>
+                <label for="quantity">Antal: <input type="number" name="quantity" id="quantity"></label>
                 <br><br>
-                <label>Antal: <input type="number" name="quantity" id="quantity"></label>
+                <label for="check_ledsagare"><input type="checkbox" name="newsletter" value="" id="check_ledsagare"> Medtag av ledsagare</label>
+                <br>
+                <label for="check_djur"><input type="checkbox" name="newsletter" value="" id="check_djur"> Medtag av assistanshund/ledarhund </label>
+                <br>
+                <br>
+                <label for="check_rullstol"><input type="checkbox" name="newsletter" value="" id="check_rullstol"> Rullstolsanpassad transport</label>
+                <br>
+                <label for="check_liggande"><input type="checkbox" name="newsletter" value="" id="check_liggande"> Liggande transport</label>
                 <br><br>
-                <p><label for="check_ledsagare"><input type="checkbox" name="newsletter" value="" id="check_ledsagare">
-                        Ledsagare följer med</label></p>
-                <br><br>
-
-                <p><label for="check_rullstol"><input type="checkbox" name="newsletter" value="" id="check_rullstol">
-                        Rullstolsanpassad transport</label></p>
-                <p><label for="check_liggande"><input type="checkbox" name="newsletter" value="" id="check_liggande">
-                        Liggande transport</label></p>
-                <p><label for="check_djur"><input type="checkbox" name="newsletter" value="" id="check_djur"> Djur
-                        följer med </label></p>
-                <br><br>
-
+                
                 <label for="textarea_messages">Meddelande: </label><br>
                 <textarea name="message" id="textarea_messages" cols="40" rows="8"></textarea>
                 <br><br>
+                
 
 
                 <button class="btn" onclick="location.href='bokaresa.html'" type="button"><img
                         src="bilder/icon_arrow_back.png" alt="ikon pil tillbaka"> Tillbaka</button>
                 <button class="btn" onclick="location.href='kontroll_betalning.html'" type="button"> Betala <img
                         src="bilder/icon_arrow_forward.png" alt="ikon pil framåt"></button>
-            </section>
+               
+            </form>
 
 
 

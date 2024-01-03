@@ -557,9 +557,32 @@ main {
     top: 5px;
 }
 
-#section_resatill {
+
+#section_resafrån {
     grid-column: 5/9;
     grid-row: 4/5;
+    padding: 100px 0 0 0 ;
+}
+
+#section_resafrån input, select {
+    width: 300px;
+    height: 30px;
+    border-radius: 3px;
+    border: 2px solid black;
+}  
+
+#section_resafrån label {
+    font-size: 20px;
+}
+
+#section_resafrån ::placeholder {
+    font-size: 16px;
+}
+
+
+#section_resatill {
+    grid-column: 5/9;
+    grid-row:5/6;
     padding: 100px 0 0 0 ;
 }
 
@@ -580,27 +603,6 @@ main {
 
 #section_resatill a {
     font-size: 20px;
-}
-
-#section_resafrån {
-    grid-column: 5/9;
-    grid-row: 5/6;
-    padding: 100px 0 0 0 ;
-}
-
-#section_resafrån input, select {
-    width: 300px;
-    height: 30px;
-    border-radius: 3px;
-    border: 2px solid black;
-}  
-
-#section_resafrån label {
-    font-size: 20px;
-}
-
-#section_resafrån ::placeholder {
-    font-size: 16px;
 }
 
 #section_närresa {
@@ -638,7 +640,7 @@ main {
 }
 
 #section_hurmånga #quantity { 
-    width: 60px;
+    width: 80px;
     height: 30px;
     border-radius: 3px;
     border: 2px solid black;
