@@ -317,7 +317,7 @@ main {
 /*Main-mina sidor*/
 #main_minasidor {
     display: grid;
-    grid-template-columns: 1fr 2fr 1 fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 50px 150px 120px 120px 120px 120px;
 }
 

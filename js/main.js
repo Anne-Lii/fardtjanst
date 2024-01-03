@@ -8,6 +8,8 @@ let closeButtonEl = document.getElementById("close-menu");
 openButtonEl.addEventListener("click", togglemenu);
 closeButtonEl.addEventListener("click", togglemenu);
 
+
+//funktion som visar och gömmer hamburgemenyn för liten skärm
 function togglemenu() {
 
     let navMenuEl = document.getElementById("nav-menu");
@@ -33,6 +35,7 @@ let check_återkommandeEl = document.getElementById("check_återkommande");
 check_återkommandeEl.addEventListener("click", toggledays);
 
 
+//funktion som visar och gömmer val på återkommande resor
 function toggledays() {
 
     let återkommande_dropmenyEl = document.getElementById("återkommande_dropmeny");

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,12 @@
     <script src="js/main.js" defer></script>
     <title>Färdtjänst</title>
 </head>
+
 <body>
     <div class="container">
         <header>
             <a class="logotyp" href="index.html"><img src="bilder/logo.png" alt="logotyp"></a>
-           
+
             <img id="icon-minasidor" src="bilder/minasidor.png" alt="ikon mina sidor">
             <a id="link-minasidor" href="mina_sidor.html">Mina sidor</a>
             <img id="icon_search" src="bilder/icon_search.png" alt="ikon sök">
@@ -22,33 +24,33 @@
             <a id="link_language" href="">Välj Språk</a>
 
 
-                <!--Meny-knapp för att öppna dropdown meny-->
-           
-                <button class="menu-btn open" id="open-menu">
-                    <span class="menu-icon" id="menu-icon-bars">
-                        <span class="bars"></span>
-                        <span class="bars"></span>
-                        <span class="bars"></span>
+            <!--Meny-knapp för att öppna dropdown meny-->
+
+            <button class="menu-btn open" id="open-menu">
+                <span class="menu-icon" id="menu-icon-bars">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                </span>
+                <span class="menu-text">Meny</span>
+            </button>
+            <!--dropdown meny och stäng-knappen -->
+            <nav id="nav-menu">
+                <!--Stängaknappen som visas när mdropmenyn är -->
+                <button id="close-menu">
+                    <span class="menu-icon" id="menu-icon-cross">
+                        <span class="bars cross1"></span>
+                        <span class="bars cross2"></span>
                     </span>
-                    <span class="menu-text">Meny</span>
+                    <span class="menu-text">Stäng</span>
                 </button>
-                <!--dropdown meny och stäng-knappen -->
-                <nav id="nav-menu">
-                    <!--Stängaknappen som visas när mdropmenyn är -->
-                    <button id="close-menu">
-                        <span class="menu-icon" id="menu-icon-cross">
-                            <span class="bars cross1"></span>
-                            <span class="bars cross2"></span>
-                        </span>
-                        <span class="menu-text">Stäng</span>
-                    </button>
-                    <ul>
-                        <li><a href="index.html">Startsidan</a></li>
-                        <li><a href="bokaresa.html">Boka resa</a></li>
-                        <li><a href="mina_sidor.html">Mina sidor</a></li>
-                        <li><a href="index.html">Logga ut</a></li>
-                    </ul>
-                </nav>
+                <ul>
+                    <li><a href="index.html">Startsidan</a></li>
+                    <li><a href="bokaresa.html">Boka resa</a></li>
+                    <li><a href="mina_sidor.html">Mina sidor</a></li>
+                    <li><a href="index.html">Logga ut</a></li>
+                </ul>
+            </nav>
 
         </header>
 
@@ -58,20 +60,21 @@
             <a href="bokaresa.html">BOKA RESA</a>
             <a href="index.html">LOGGA UT</a>
         </nav>
-        
+
         <main id="main_minafakturor">
-            <p  id="breadcrums_minafakturor">
-                <a href="index.html">Startsida</a> / <a href="inloggning.html">Logga in</a> / <a href="mina_sidor.html">Mina sidor</a> / Mina fakturor
+            <p id="breadcrums_minafakturor">
+                <a href="index.html">Startsida</a> / <a href="inloggning.html">Logga in</a> / <a
+                    href="mina_sidor.html">Mina sidor</a> / Mina fakturor
             </p>
 
             <h1>Mina fakturor</h1>
 
             <button id="btn_obetalda" onclick="location.href=''" type="button">Obetalda fakturor </button>
             <button id="btn_betalda" onclick="location.href=''" type="button">Betalade fakturor </button>
-    
+
         </main>
         <footer>
-            <div id="contact" >
+            <div id="contact">
                 <strong>Kontakta oss:</strong><br>
                 <img id="icon_telephone" src="bilder/icon_telephone.png" alt="ikon telefon">
                 Telefon: 08-555 555<br>
@@ -81,16 +84,18 @@
 
             <a id="link_avboka" href="minaresor.html">Avboka / Ändra</a>
             <a id="link_ansok" href="ansok.html">Ansök om färdtjänst</a>
-            <a id="icons_download" href="https://play.google.com/store/games?hl=sv&gl=US"><img src="bilder/icons_download.png" alt="Ladda ner till google Play och app store"></a>
-            
-            
+            <a id="icons_download" href="https://play.google.com/store/games?hl=sv&gl=US"><img
+                    src="bilder/icons_download.png" alt="Ladda ner till google Play och app store"></a>
+
+
 
             <a id="link_omfard" href="about_fardtjanst.html">Om färdtjänst</a>
             <a id="link_omwebb" href="about_thewebpage.html">Om webbplatsen</a>
             <a id="link_tillgang" href="tillganglighetsredogorelse.html">Tillgänglighetsredogörelse</a>
         </footer>
 
-    </div>   
-    
+    </div>
+
 </body>
+
 </html>
