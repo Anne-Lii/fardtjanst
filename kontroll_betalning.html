@@ -59,7 +59,7 @@
             <a href="index.html">STARTSIDA</a>
             <a href="ansok.html">ANSÖK OM FÄRDTJÄNST</a>
             <a href="bokaresa.html">BOKA RESA</a>
-            <a href="index.html.html">LOGGA UT</a>
+            <a href="index.html">LOGGA UT</a>
         </nav>
 
 
@@ -97,15 +97,17 @@
                     <strong>Resa från:</strong>
                     <br>
                     Exempelgatan 1, 555 55 Hittepåstaden
-                    <input type="checkbox" name="Läggtill" value="favoriter" class="läggtillfavorit">
-                    Lägg till favorit <img src="bilder/icon_add_favorite_black.png"
+                    <input type="checkbox" name="Läggtill" value="favoriter" class="läggtillfavorit" id="add_favorite_from">
+                    <label for="add_favorite_from">Lägg till favorit</label>
+                     <img src="bilder/icon_add_favorite_black.png"
                         alt="ikon hjärta med ett plustecken">
                     <br><br>
                     <strong>Resa till:</strong>
                     <br>
                     Fantasivägen 14, 555 55 Hittepåstaden
-                    <input type="checkbox" name="Läggtill" value="favoriter" class="läggtillfavorit">
-                    Lägg till favorit <img src="bilder/icon_add_favorite_black.png"
+                    <input type="checkbox" name="Läggtill" value="favoriter" class="läggtillfavorit" id="add_favorite_to">
+                    <label for="add_favorite_to">Lägg till favorit</label>
+                     <img src="bilder/icon_add_favorite_black.png"
                         alt="ikon hjärta med ett plustecken">
                     <br><br>
                     <strong>Önskad ankomsttid:</strong>
@@ -122,11 +124,15 @@
             <section id="check_bokningsbekräftelse"> 
                 <h2>Hur vill du ha din bokningsbekräftelse?</h2> 
                 <br>
-                <p><input type="checkbox" name="SMS" value="bekräftelse" class="bokningsbekräftelse">
-                    Bokningsbekräftelse via SMS</p>
+                <p>
+                    <input type="checkbox" name="SMS" value="bekräftelse" class="bokningsbekräftelse" id="bekräftelse_sms">
+                    <label for="bekräftelse_sms">Bokningsbekräftelse via SMS</label>
+                    </p>
                 
-                <p><input type="checkbox" name="mail" value="bekräftelse" class="bokningsbekräftelse">
-                    Bokningsbekräftelse via mail</p>
+                <p>
+                    <input type="checkbox" name="mail" value="bekräftelse" class="bokningsbekräftelse" id="bekräftelse_mail">
+                    <label for="bekräftelse_mail">Bokningsbekräftelse via mail</label>
+                    </p>
                     <br><br>
             </section> 
                     
@@ -140,11 +146,17 @@
                     <br><br><br>
                     <strong>Hur vill du betala?</strong>
                     <br><br>
-                    <input type="checkbox" name="faktura" value="betalning_" class="check_betalning"> Lägg till
-                    månadsfaktura<br><br>
-                    <input type="checkbox" name="swish" value="betalning_" class="check_betalning"> Swish<br><br>
-                    <input type="checkbox" name="kort" value="betalning_" class="check_betalning"> Kortbetalning<br><br>
-                    <input type="checkbox" name="klarna" value="betalning_" class="check_betalning"> Klarna<br><br>
+                    <input type="checkbox" name="faktura" value="betalning_" class="check_betalning" id="check_faktura">
+                    <label for="check_faktura">Lägg till månadsfaktura</label><br><br>
+                    
+                    <input type="checkbox" name="swish" value="betalning_" class="check_betalning" id="check_swish"> 
+                    <label for="check_swish">Swish</label><br><br>
+
+                    <input type="checkbox" name="kort" value="betalning_" class="check_betalning" id="check_kort"> 
+                    <label for="check_kort">Kortbetalning</label><br><br>
+
+                    <input type="checkbox" name="klarna" value="betalning_" class="check_betalning" id="check_klarna"> 
+                    <label for="check_klarna">Klarna</label><br><br>
                 </p>
 
             </section>
@@ -159,7 +171,7 @@
 
         <footer>
             <div id="contact" >
-                <strong>Kontakta oss:</strong>
+                <strong>Kontakta oss:</strong><br>
                 <img id="icon_telephone" src="bilder/icon_telephone.png" alt="ikon telefon">
                 Telefon: 08-555 555<br>
                 <img id="icon_mail" src="bilder/icon_mail.png" alt="ikon mail">
