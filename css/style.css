@@ -1189,27 +1189,6 @@ footer #contact {
     text-shadow: 2px 2px 10px rgb(71, 71, 71);
 }
 
-footer  #link_avboka {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    align-self: center;
-    justify-self: center;
-    text-shadow: 2px 2px 10px rgb(71, 71, 71);
-}
-
-footer #link_ansok {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    align-self: center;
-    justify-self: center;
-    text-shadow: 2px 2px 10px rgb(71, 71, 71);
-}
 
 footer #icons_download {
     grid-column: 2/3;
@@ -1219,8 +1198,8 @@ footer #icons_download {
 }
 
 
-footer #link_omfard {
-    grid-column: 3/4;
+footer #link_omwebb {
+    grid-column: 2/3;
     grid-row: 1/2;
     color: white;
     font-weight: bold;
@@ -1230,20 +1209,9 @@ footer #link_omfard {
     text-shadow: 2px 2px 10px rgb(71, 71, 71);
 }
 
-footer #link_omwebb {
-    grid-column: 3/4;
-    grid-row: 2/3;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    align-self: center;
-    justify-self: center;
-    text-shadow: 2px 2px 10px rgb(71, 71, 71);
-}
-
 footer #link_tillgang {
-    grid-column: 3/4;
-    grid-row: 3/4;
+    grid-column: 2/3;
+    grid-row: 2/3;
     color: white;
     font-weight: bold;
     font-size: 20px;
