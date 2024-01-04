@@ -39,10 +39,8 @@ check_återkommandeEl.addEventListener("click", toggledays);
 function toggledays() {
 
     let återkommande_dropmenyEl = document.getElementById("återkommande_dropmeny");
-    console.log("det funkar");
-
+    
     let styled = window.getComputedStyle(återkommande_dropmenyEl);
-    console.log(styled.display);
 
     if(styled.display === "none") {
         återkommande_dropmenyEl.style.display = "block";
