@@ -213,8 +213,8 @@ main {
     text-shadow: 3px 3px 5px black;
     text-decoration: none;
     position: relative;
-    top: 40px;
-    left: 60px;
+    top: 42px;
+    padding: 45px 64px 48px 60px;
 }
 
 
